@@ -40,6 +40,8 @@ class Dev(Configuration):
   SESSION_COOKIE_SAMESITE = 'None'
   CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
   CRISPY_TEMPLATE_PACK = "bootstrap5"
+  
+  AUTH_USER_MODEL = "blango_auth.User"
 
 
   # Application definition
@@ -51,6 +53,7 @@ class Dev(Configuration):
       'django.contrib.sessions',
       'django.contrib.messages',
       'django.contrib.staticfiles',
+      'blango_auth',
       'blog',
       'crispy_forms',
       'crispy_bootstrap5',
